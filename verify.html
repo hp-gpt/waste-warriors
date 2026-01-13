@@ -25,10 +25,11 @@ function checkPassword(event) {
     event.preventDefault(); // This stops the page from refreshing
     const password = document.getElementById("pswd").value;
     
-    if (password === "dumbass") {
+    if (password === "reprocessing") {
         window.location.assign("weightcheck.html"); // Try .assign() for better compatibility
     } else {
         alert("Wrong password!");
     }
 }
+
 </script>
