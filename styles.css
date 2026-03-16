@@ -381,6 +381,7 @@ select {
         height: 70px;
         flex-direction: row;
         padding: 5px 10px;
+        justify-content: space-between;
         border-radius: 0px;
     }
 
@@ -393,10 +394,9 @@ select {
 
     /* Fix body margins for mobile */
     body {
-        margin-top: 140px;
-        margin-left: 0px;
+        margin-top: 50px !important;
+        margin-left: 20px !important;
         padding-bottom: 80px;
-        padding-left: 10px;
         padding-right: 10px;
     }
 
@@ -407,7 +407,7 @@ select {
 
     /* Nav tabs wrap on small screens */
     .nav-tabs {
-        top: 70px;
+        top: 150px;
         flex-wrap: wrap;
         height: auto;
         gap: 6px;
@@ -423,16 +423,11 @@ select {
     .section {
         padding: 8%;
         border-radius: 30px;
+        margin-left: 0px;
     }
 
     .photo {
         height: 200px;
     }
 
-    /* Waste grid single column */
-    .waste-types {
-        margin: 100px 10px 10px 10px;
-        grid-template-columns: 1fr;
-        column-gap: 0;
-    }
 }
