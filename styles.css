@@ -1,6 +1,6 @@
 /* ===== FONTS & BASE ===== */
 body {
-    font-family: DM Sans;
+    font-family: DM Sans !important;
     background-repeat: no-repeat;
     background-position: center center;
     padding-top: 150px;
@@ -350,6 +350,7 @@ select {
     margin-top: 20px;
     margin-right: 20px;
     font-size: 22px;
+    font-family: DM Sans;
 }
 
 .about-info span {
@@ -385,10 +386,21 @@ select {
         border-radius: 0px;
     }
 
+    .sidebar {
+        left: 0px !important;
+        right: 0px !important;
+        width: 100% !important;
+        justify-content: space-around;
+        border-radius: 0px !important;
+        padding: 5px 0px;
+    }
+
+
     .sidebar-link,
     .sidebar-link:after {
-        height: 55px;
-        width: 55px;
+        height: 70px;
+        width: 80px;
+        line-height: 1;
         border-radius: 10px;
     }
 
@@ -429,5 +441,64 @@ select {
     .photo {
         height: 200px;
     }
+}
 
+@media (max-width: 768px) {
+
+    .student-info,
+    .waste-info,
+    .school-info {
+        padding: 20px;
+        border-radius: 40px;
+    }
+
+    .student-id,
+    .student-name,
+    .waste-weight,
+    .waste-type,
+    .house,
+    .grade {
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .student-id:hover,
+    .student-name:hover,
+    .waste-weight:hover,
+    .waste-type:hover,
+    .house:hover,
+    .grade:hover,
+    .button:hover {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 18px;
+        height: 45px;
+    }
+
+    .submit-button {
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
 }
