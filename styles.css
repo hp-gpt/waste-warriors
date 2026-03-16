@@ -27,32 +27,37 @@ select {
 /* ===== HEADER ===== */
 .header {
     font-family: DM Sans;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
+    color: navy;
+    text-shadow: 0px 0px 10px white;
     background-color: deepskyblue;
     position: fixed;
     font-size: 50px;
-    padding: 20px;
+    padding: 0px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1;
     top: 0px;
     z-index: 100;
     right: 0px;
-    height: 100px;
+    height: 150px;
     left: 0px;
+    overflow: hidden;
     text-align: center;
+}
+
+.header-img {
+    height: 55%;
 }
 
 /* ===== MARQUEE ===== */
 .marquee-container {
     font-family: DM Sans;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     background-color: navy;
     position: fixed;
-    top: 100px;
+    top: 150px;
     right: 0px;
-    height: 30px;
+    height: 20px;
     left: 0px;
     padding: 15px;
     z-index: 100;
@@ -151,7 +156,7 @@ select {
     left: 0;
     right: 0;
     height: 70px;
-    z-index: 99;
+    z-index: 10000009;
     display: flex;
     gap: 10px;
     padding: 10px 20px;
@@ -205,6 +210,7 @@ select {
     top: 120px;
     width: auto;
     padding: 10%;
+    z-index: 99;
     color: white;
     box-shadow: 0 0 20px 15px cornflowerblue;
     border-radius: 50px;
@@ -414,7 +420,7 @@ select {
 
     /* Marquee moves up to match smaller header */
     .marquee-container {
-        top: 70px;
+        top: 90px;
     }
 
     /* Nav tabs wrap on small screens */

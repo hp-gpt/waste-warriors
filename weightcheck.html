@@ -25,5 +25,24 @@
 </form>
 
 <body></body>
+<script>
+
+    window.addEventListener("DOMContentLoaded", function () {
+        const yourForm = document.getElementById('AKfycbyMgeX-lJLzFugXCz2rpdVy-9zdlL_VKrVSPqXsWj1cMrCO8UOH09tQudZ32ImlPeDIng');
+        yourForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const data = new FormData(yourForm);
+            const action = e.target.action;
+            fetch(action, {
+                method: 'POST',
+                body: data,
+            }).then(() => {
+                alert('Success! Thank you for your donation :)');
+                window.location.replace('index.html')
+            })
+        })
+    });
+
+</script>
 
 </html>
