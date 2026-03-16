@@ -94,9 +94,9 @@ select {
     background-color: navy;
     position: fixed;
     top: 100px;
-    left: -6px;
+    left: -10px;
     bottom: 0px;
-    width: 72px;
+    width: 90px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -111,7 +111,7 @@ select {
     background-color: deepskyblue;
     color: black;
     font-size: 15px;
-    height: 74px;
+    height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +150,7 @@ select {
     top: 200px;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 70px;
     z-index: 99;
     display: flex;
     gap: 10px;
@@ -358,4 +358,81 @@ select {
 
 .about-logo {
     width: 300px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    /* Header smaller on mobile */
+    .header {
+        font-size: 30px;
+        height: 70px;
+        line-height: 30px;
+        padding: 10px;
+    }
+
+    /* Sidebar moves to the bottom instead of the left */
+    .sidebar {
+        top: auto;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 70px;
+        flex-direction: row;
+        padding: 5px 10px;
+        border-radius: 0px;
+    }
+
+    .sidebar-link,
+    .sidebar-link:after {
+        height: 55px;
+        width: 55px;
+        border-radius: 10px;
+    }
+
+    /* Fix body margins for mobile */
+    body {
+        margin-top: 140px;
+        margin-left: 0px;
+        padding-bottom: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Marquee moves up to match smaller header */
+    .marquee-container {
+        top: 70px;
+    }
+
+    /* Nav tabs wrap on small screens */
+    .nav-tabs {
+        top: 70px;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 6px;
+        padding: 6px 10px;
+    }
+
+    .nav-btn {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    /* Cards full width on mobile */
+    .section {
+        padding: 8%;
+        border-radius: 30px;
+    }
+
+    .photo {
+        height: 200px;
+    }
+
+    /* Waste grid single column */
+    .waste-types {
+        margin: 100px 10px 10px 10px;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
 }
