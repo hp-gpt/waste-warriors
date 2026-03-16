@@ -3,7 +3,7 @@ body {
     font-family: DM Sans !important;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-top: 150px;
+    padding-top: 100px;
     margin-left: 70px;
     background-image: linear-gradient(to right, deepskyblue, skyblue, deepskyblue);
     min-height: 100vh;
@@ -29,7 +29,7 @@ select {
     font-family: DM Sans;
     color: navy;
     text-shadow: 0px 0px 10px white;
-    background-color: deepskyblue;
+    background-image: radial-gradient(circle, lightblue, skyblue, deepskyblue);
     position: fixed;
     font-size: 50px;
     padding: 0px;
@@ -114,10 +114,11 @@ select {
 .sidebar-link,
 .sidebar-link:after {
     background-color: deepskyblue;
-    color: black;
+    color: white;
     font-size: 15px;
     height: 90px;
     display: flex;
+    font-weight: 700;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -147,6 +148,11 @@ select {
     text-align: center;
     line-height: 5px;
     font-family: Roboto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* ===== NAV TABS ===== */
@@ -208,6 +214,7 @@ select {
     font-size: 25px;
     top: 120px;
     width: auto;
+    margin-top: 200px;
     padding: 10%;
     z-index: 99;
     color: white;
@@ -411,9 +418,11 @@ select {
 
     /* Fix body margins for mobile */
     body {
-        margin-top: 50px !important;
+        margin-top: 10px !important;
         margin-left: 20px !important;
         padding-bottom: 80px;
+        padding-left: 0px;
+        padding-top: 0px;
         padding-right: 10px;
     }
 
@@ -449,6 +458,10 @@ select {
 }
 
 @media (max-width: 768px) {
+
+    .student-info {
+        margin-top: 160px !important;
+    }
 
     .student-info,
     .waste-info,
@@ -491,20 +504,26 @@ select {
         font-size: 16px;
         border-radius: 30px;
     }
-}
 
-.student-id:hover,
-.student-name:hover,
-.waste-weight:hover,
-.waste-type:hover,
-.house:hover,
-.grade:hover,
-.button:hover {
-    padding: 15px;
-    font-size: 20px;
-}
 
-.sidebar a {
-    text-decoration: none;
-    color: inherit;
+    .student-id:hover,
+    .student-name:hover,
+    .waste-weight:hover,
+    .waste-type:hover,
+    .house:hover,
+    .grade:hover,
+    .button:hover {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .about-logo {
+        margin-top: 175px;
+    }
+
 }
