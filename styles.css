@@ -201,7 +201,7 @@ select {
 /* ===== SECTIONS & CARDS ===== */
 .section {
     height: fit-content;
-    font-size: 40px;
+    font-size: 25px;
     top: 120px;
     width: auto;
     padding: 10%;
@@ -433,7 +433,7 @@ select {
 
     /* Cards full width on mobile */
     .section {
-        padding: 8%;
+        padding: 10%;
         border-radius: 30px;
         margin-left: 0px;
     }
