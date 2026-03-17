@@ -101,6 +101,7 @@ select {
     top: 100px;
     left: -10px;
     bottom: 0px;
+    z-index: 1000;
     width: 90px;
     display: flex;
     flex-direction: column;
@@ -216,12 +217,11 @@ a {
     width: auto;
     margin-top: 200px;
     padding: 10%;
-    z-index: 99;
     color: white;
     box-shadow: 0 0 20px 15px cornflowerblue;
     border-radius: 50px;
     background-image: radial-gradient(ellipse at top, #00d2ff, #0072ff, #0f0c29);
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     animation: fadeIn 1s ease;
 }
 
@@ -262,25 +262,6 @@ a {
     z-index: -1;
 }
 
-/* ===== PICTURES ===== */
-.pic-col {
-    display: block;
-    background-image: linear-gradient(to bottom right, navy, deepskyblue, skyblue);
-    border-radius: 100px;
-}
-
-.pic {
-    height: 250px;
-    border-radius: 200px;
-    padding-top: 10px;
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-.pic-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
 
 /* ===== FORMS ===== */
 .student-info,
@@ -344,6 +325,10 @@ a {
     font-size: 20px;
 }
 
+select {
+    color: black;
+}
+
 .button {
     font-family: DM Sans;
     font-size: 25px;
@@ -370,7 +355,8 @@ a {
 }
 
 .about-logo {
-    width: 300px;
+    width: 150px;
+    padding: 0px 15px;
 }
 
 /* ===== MOBILE ===== */
@@ -420,9 +406,9 @@ a {
     body {
         margin-top: 10px !important;
         margin-left: 20px !important;
-        padding-bottom: 80px;
+        padding-bottom: 100px;
         padding-left: 0px;
-        padding-top: 0px;
+        padding-top: 2px;
         padding-right: 10px;
     }
 
@@ -433,10 +419,9 @@ a {
 
     /* Nav tabs wrap on small screens */
     .nav-tabs {
-        top: 150px;
-        flex-wrap: wrap;
+        top: 140px;
         height: auto;
-        gap: 6px;
+        column-gap: 10px;
         padding: 6px 10px;
     }
 
