@@ -450,7 +450,7 @@ select {
 @media (max-width: 768px) {
 
     .student-info {
-        margin-top: 160px !important;
+        margin-top: 0px !important;
     }
 
     .student-info,
