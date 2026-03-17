@@ -354,9 +354,11 @@ select {
     text-align: right;
 }
 
-.about-logo {
+.about-logo,
+.about-logo2 {
     width: 150px;
     padding: 0px 15px;
+    margin-top: 15px;
 }
 
 /* ===== MOBILE ===== */
